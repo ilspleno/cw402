@@ -1,0 +1,58 @@
+### All guesses that need to be fine tuned for actual data
+
+* Assignments
+* Tests
+* Student Src Code
+*A utoGrader Output
+LLM response (feedback)
+* Student
+
+---
+
+students
+--------
+ID - autoincrementing integer
+student_ID - student ID number? username? nothing?
+student_Name - full name?
+??? additional information???
+
+
+
+Assignments
+-----------
+id
+description - Short description of Assignments
+starter_code - Any initial code given to student
+
+Tests
+-----
+id
+assignment_id - ID of specific assignment_id
+test_info - represents the test that is being run against student code - is this a description? actual code that does the checK? not needed?
+expected_result - the expected output that will "pass" a test
+
+autograder_outputs
+--------------
+id
+student_id - the student this output was generated for
+assignment_id - the assignment this output was generated for
+test_id - ??? the specific test this output is passing or failing - needed?
+output - The actual output from the autograder 
+
+
+source_codes
+----
+id
+student_id
+assignment_id
+file_path
+
+llm_responses
+----
+id
+student_id
+assignment_id
+test_id - ??? maybe
+response_text - the output
+
+
